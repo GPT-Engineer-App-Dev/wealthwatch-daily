@@ -1,8 +1,9 @@
-import { Box, Container, Heading, VStack, Text, SimpleGrid, GridItem, Divider } from "@chakra-ui/react";
+import { Box, Container, Heading, VStack, Text, SimpleGrid, GridItem, Divider, useTheme } from "@chakra-ui/react";
 
 const Index = () => {
+  const theme = useTheme();
   return (
-    <Container maxW="container.xl" py={8}>
+    <Container maxW="container.xl" py={8} bg={theme.colors.background}>
       <VStack spacing={8} align="stretch">
         {/* Header */}
         <Box textAlign="center">
